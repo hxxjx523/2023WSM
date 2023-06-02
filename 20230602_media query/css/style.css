@@ -1,0 +1,20 @@
+/* desktop */
+body{
+    background-color: darkseagreen;
+}
+
+/* tablet */
+@media screen and (max-width: 720px) {
+   body{
+    background-color: blueviolet;
+   }
+    
+}
+
+/* mobile */
+@media screen and (max-width: 540px) { /* 이거 그대로 외워야 됨 띄어쓰기도 */
+    body{
+        background-color: yellow;
+    }
+    
+}

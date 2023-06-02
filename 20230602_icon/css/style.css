@@ -1,4 +1,5 @@
 .bi-list{
+    /* 1rem == 16px == 대문자M의 너비 */
     font-size: 10rem;
     color: gold;
 
