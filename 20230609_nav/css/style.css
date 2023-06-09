@@ -1,0 +1,49 @@
+ /* Google font */
+ @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');
+  
+ /* Variables CSS*/
+ :root{
+    /* color */
+    --first-color: #008156;
+    --second-color: #efb11c;
+    --body-color: #000;
+
+    /* font */
+    --body-font: 'Nanum Myeongjo', serif;
+    --h1-font-size: 2rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.8rem;
+    --smaller-font-size: 0.6rem;
+    --font-regular: 400;
+    --font-bold: 700;
+    --font-extra-bold: 800;
+
+}
+ body{
+    font-family: var(--body-font);
+    color: var(--body-color);
+ }
+
+ header{
+    background-color: var(--first-color);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+ }
+
+ nav{
+    height: 44px;
+ }
+
+ .nav.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ .nav-list{
+    display: flex;
+ }
