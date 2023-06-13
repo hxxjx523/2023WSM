@@ -39,11 +39,70 @@
  }
 
  .nav.container{
-    display: flex;
+    display: flex;   /* 기본값 : 수평 정렬 */
     justify-content: space-between;
     align-items: center;
+    color: #fff;
+    padding: 0 16px; /* 위아래 0 왼오른 16px */
+
+ }
+
+ .nav.container a {
+   color: #fff;
  }
 
  .nav-list{
-    display: flex;
- }
+   display: flex;
+   column-gap: 80px; /* item의 열 사이 공간 */ 
+   font-weight: var(--font-bold);   
+}
+
+.nav-toggle{
+   font-size: var(--h2-font-size); /* 햄버거 메뉴 사이즈 <- 이거 시험 나옴 */
+   visibility: hidden; /* 햄버거 메뉴 안 보이게 */
+}
+
+/* tablet */
+@media screen and (max-width: 720px) {
+   
+}
+
+/* mobile */
+@media screen and (max-width: 540px) {
+   /* .nav-logo 가운데 */
+   .nav-logo{
+      margin: 0 auto;
+   }
+
+   /* .nav-list navbar 아래로 */
+   .nav-list{
+      position: absolute;
+      top: 44px;
+      right: 0; /* 너비를 양 옆으로 늘리기 */
+      left: 0; /* 너비를 양 옆으로 늘리기 */
+      flex-direction: column;
+      align-items: center; /* 교차축 가운데 */
+      background-color: rgba(239, 177, 28, 0.4);
+      backdrop-filter: blur(8px); /* blur 효과 */
+      height: 0;
+      overflow: hidden;
+   }
+
+   .nav-item{
+      padding: 1em 0;
+      border-bottom: 2px solid #fff;
+   }
+
+   .nav-link{
+      display: block;
+   }
+   /* .nav-toggle 보이게 */
+   .nav-toggle{
+      visibility: visible;
+      position: absolute; /* .nav-logo 가운데 정확히 위치 */
+      right: 16px; /* 오른쪽 여백 16px 위치로 */
+   }
+   
+   /* show-menu하면, .nav-list 보이게 */
+   /* show-menu하면, .nav-toggle 버튼 x로 */
+}
