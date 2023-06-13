@@ -8,9 +8,11 @@ WSM 수업 내용
 - icon
 - media query
 - nav
+---
 ## 실행 방법
 1. 링크 접속
 2. index.html 실행
+---
 ## 특징
 - 3.14~ 수업한 소스들의 모음
 - html, css 기초
