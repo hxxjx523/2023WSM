@@ -81,7 +81,8 @@
       right: 0; /* 너비를 양 옆으로 늘리기 */
       left: 0; /* 너비를 양 옆으로 늘리기 */
       flex-direction: column;
-      align-items: center; /* 교차축 가운데 */
+      /* align-items: center; 교차축 가운데 */
+      text-align: center; /*글자만 가운데로*/
       background-color: rgba(239, 177, 28, 0.4);
       backdrop-filter: blur(8px); /* blur 효과 */
       height: 0;
