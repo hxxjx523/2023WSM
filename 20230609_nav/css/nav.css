@@ -43,7 +43,7 @@
     justify-content: space-between;
     align-items: center;
     color: #fff;
-    padding: 0 16px; /* 위아래 0 왼오른 16px */
+    padding: 0 16px; /*위아래 0 왼오른 16px*/
 
  }
 
@@ -87,6 +87,7 @@
       backdrop-filter: blur(8px); /* blur 효과 */
       height: 0;
       overflow: hidden;
+      transition: 0.5s;
    }
 
    .nav-item{
