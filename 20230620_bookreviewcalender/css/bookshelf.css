@@ -1,0 +1,21 @@
+.bookshelf{
+    margin-top: calc(44px + 100px); /* 더하기 꼭 띄어쓰기 */
+    display: flex;
+    gap: 80px; /* row-gap: 20px; column-gap: 20px; */
+    flex-wrap: wrap;     /* 요소 내리기 */
+    justify-content: center;
+}
+
+.row-container{
+    display: flex;
+    column-gap: 80px;
+    align-items: flex-end;
+}
+
+.book-item{
+    box-shadow: 0 16px 32px #ccc;
+}
+
+.book-item > img{
+    width: 150px;
+}
