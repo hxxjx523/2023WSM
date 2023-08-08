@@ -1,21 +1,30 @@
-.bookshelf{
-    margin-top: calc(44px + 100px); /* 더하기 꼭 띄어쓰기 */
+.bookshelf {
+    margin-top: calc(44px + 100px);
     display: flex;
-    gap: 80px; /* row-gap: 20px; column-gap: 20px; */
-    flex-wrap: wrap;     /* 요소 내리기 */
+    gap: 80px;  /* row-gap: 20px; column-gap: 20px; */
+    flex-wrap: wrap;
     justify-content: center;
+    max-width: calc(150px * 4 + 80px * 3);  /* 최대 4개까지만 보이게 */
+    margin-left: auto;  /* 가운데 맞춤 */
+    margin-right: auto;  /* 가운데 맞춤 */
 }
 
-.row-container{
+.row-container {
     display: flex;
     column-gap: 80px;
     align-items: flex-end;
 }
 
-.book-item{
-    box-shadow: 0 16px 32px #ccc;
+.book-item {
+    box-shadow: 0 16px 32px #ddd;
+    transition: all 0.2s;   /* hover일 때만 아니라 마우스 벗어나는 경우도 자연스럽게 내려오게 */
+}
+.book-item:hover {
+    box-shadow: 0 32px 64px #e0e0e0;    /* 그림자 더 밑으로, 더 흐리게, 더 밝게 */
+    transform: translateY(-8px);    /* 위로 8px 이동하자 */
 }
 
-.book-item > img{
+.book-item img {
     width: 150px;
+    display: block; /* 이미지 밑에 살짝 생기는 여백 문제 해결 */
 }
