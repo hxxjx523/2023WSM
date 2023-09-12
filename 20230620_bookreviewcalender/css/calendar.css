@@ -40,8 +40,19 @@ main{
     align-items: center; */
 }
 
+/* 오늘에 맞는 요일 이동 */
 .date.item:nth-child(1){
     grid-column-start: 6;
+}
+
+/* 토요일 파란색 */
+.date.item:nth-child(7n+2){
+    color: blue;
+}
+
+/* 일요일 빨간색 */
+.date.item:nth-child(7n+3){
+    color: red;
 }
 
 .review.flex-container{
