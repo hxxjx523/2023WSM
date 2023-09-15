@@ -80,5 +80,3 @@ let reviews = [
         "thoughts": "좋은 말. 지키기는 어려운",
     },
 ]
-console.log(books[0].title);
-console.log(books[0]["title"]);
